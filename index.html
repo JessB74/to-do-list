@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   
+    <title>Styled To-Do List</title>
+
+<style>
+
+body{
+background-color:#FAF9F6; 
+font-size:1.3rem;
+display:flex;
+justify-content:center;
+
+}
+
+.todo-list{
+list-style:none;
+
+}
+a{
+text-decoration:none;
+
+}
+
+a:hover{
+  color:white;
+}
+
+a:active{
+color:purple;
+
+}
+a:visited{
+color:green;
+
+}
+a:focus{
+  outline: 2px solid grey;
+
+}
+h1{
+text-align:center;
+padding-top:2rem;
+}
+#main{
+
+padding-right:2rem;
+padding-bottom:2rem;
+background-color:#FFF2D7;
+border-radius:1rem;
+width:30rem;
+
+}
+.todo-list li {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+    padding: 10px; 
+     background-color: #F9DEC9 ;
+     /* #FED9ED; */
+    border-radius: 1rem; 
+     position: relative; 
+} 
+.sub-item li{
+list-style-type:square;
+
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+    <div id="main">
+    <h1>My To-do-List</h1>
+<ul class = "todo-list">
+<!-- First -->
+<li>
+<label for ="first">
+<input type="checkbox" id= "first">Learn JavaSript
+</label>
+<ul class ="sub-item">
+<li><a class="sub-item-link" target="_blank" href ="freecodecamp.org">
+    Free Code Camp</a></li>
+</ul>
+
+</li>
+
+<!-- Second -->
+<li>
+<label for ="first">
+<input type="checkbox" id= "first">Learn Git
+</label>
+<ul class ="sub-item">
+<li><a class="sub-item-link" target="_blank" href ="Udemy.com">
+    Udemy</a></li>
+</ul>
+
+</li>
+
+<!-- Third -->
+<li>
+<label for ="first">
+<input type="checkbox" id= "first">Upload project on GitHub
+</label>
+<ul class ="sub-item">
+<li><a class="sub-item-link" target="_blank" href ="github.com">
+    GitHub</a></li>
+</ul>
+
+</li>
+<!-- Fourth -->
+<li>
+<label for ="first">
+<input type="checkbox" id= "first">Learn React
+</label>
+<ul class ="sub-item">
+<li><a class="sub-item-link" target="_blank" href ="Scrimba.com">
+    Scrimba</a></li>
+</ul>
+
+</li>
+
+
+</ul>
+
+</div>
+
+
+</body>
+
+</html>
